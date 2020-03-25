@@ -71,7 +71,7 @@ RUN wget -q https://github.com/krallin/tini/releases/download/v0.18.0/tini-stati
 # Python
 # ======
 
-COPY requirements.txt /tmp/requirements.txt
+COPY src/requirements.txt /tmp/requirements.txt
 RUN pip install -U pip \
     && pip install --no-cache-dir -r /tmp/requirements.txt
 
@@ -169,16 +169,16 @@ RUN mkdir -p /etc/certs /deploy \
     /etc/gluu/conf \
     /app/templates
 
-COPY libs /opt/gluu/python/libs
-COPY certs /etc/certs
-COPY jetty/oxauth_web_resources.xml ${JETTY_BASE}/oxauth/webapps/
-COPY jetty/oxauth.xml ${JETTY_BASE}/oxauth/webapps/
-COPY conf/*.tmpl /app/templates/
-COPY conf/fido2 /etc/gluu/conf/fido2
+COPY src/libs /opt/gluu/python/libs
+COPY src/certs /etc/certs
+COPY src/jetty/oxauth_web_resources.xml ${JETTY_BASE}/oxauth/webapps/
+COPY src/jetty/oxauth.xml ${JETTY_BASE}/oxauth/webapps/
+COPY src/conf/*.tmpl /app/templates/
+COPY src/conf/fido2 /etc/gluu/conf/fido2
 RUN mkdir -p /etc/gluu/conf/fido2/mds/cert \
     /etc/gluu/conf/fido2/mds/toc \
     /etc/gluu/conf/fido2/server_metadata
-COPY scripts /app/scripts
+COPY src/scripts /app/scripts
 RUN chmod +x /app/scripts/entrypoint.sh
 
 # # create non-root user
