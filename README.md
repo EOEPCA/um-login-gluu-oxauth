@@ -21,7 +21,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/EOEPCA/template-svce">
+  <a href="https://github.com/EOEPCA/um-login-gluu-oxauth">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -30,31 +30,15 @@
   <p align="center">
     Template for developing an EOEPCA Service
     <br />
-    <a href="https://github.com/EOEPCA/template-svce"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/EOEPCA/um-login-gluu-oxauth"><strong>Explore the docs »</strong></a>
     <br />
-    <a href="https://github.com/EOEPCA/template-svce">View Demo</a>
+    <a href="https://github.com/EOEPCA/um-login-gluu-oxauth">View Demo</a>
     ·
-    <a href="https://github.com/EOEPCA/template-svce/issues">Report Bug</a>
+    <a href="https://github.com/EOEPCA/um-login-gluu-oxauth/issues">Report Bug</a>
     ·
-    <a href="https://github.com/EOEPCA/template-svce/issues">Request Feature</a>
+    <a href="https://github.com/EOEPCA/um-login-gluu-oxauth/issues">Request Feature</a>
   </p>
 </p>
-
-## Steps to use this template
-- Replace all "um-service-template" in .travis.yml with your repository's name
-- Replace the ports in .travis.yml and Dockerfile to fit your service's ports
-- Edit docs to fit your repository
-- Replace code and requirements.txt in src by your own! Make sure to use pytest, or replace it in the .travis.yml to use the correct testing suite 
-- Un-comment the "notifications" segment in .travis.yml, and input the correct data for slack and/or emails you want to notify
-
-- setup the following variables (in travis webpage, for this project) to ensure travis automated CI works (https://travis-ci.com/github/EOEPCA/<project>/settings):
-    1. GH_REPOS_NAME (this repo's name)
-    2. GH_USER_NAME (GitHub name for the responsible of this module)
-    3. GH_USER_EMAIL (GitHub email for the responsible of this module)
-    4. DOCKER_USERNAME (Username of a user with write privileges on EOEPCA in dockerhub) MAKE SURE TO MAKE THIS VARIABLE HIDDEN IN LOGS
-    5. DOCKER_PASSWORD (password for the username) MAKE SURE TO MAKE THIS VARIABLE HIDDEN IN LOGS
-
-- Edit readme to fit your repository, and delete this part!
 
 ## Table of Contents
 
@@ -81,10 +65,6 @@
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`template-svce`, `twitter_handle`, `email`
 
 ### Built With
 
@@ -116,7 +96,7 @@ vagrant ssh
 3. Clone the repo
 
 ```sh
-git clone https://github.com/EOEPCA/template-svce.git
+git clone https://github.com/EOEPCA/um-login-gluu-oxauth.git
 ```
 
 4. Change local directory
@@ -133,7 +113,7 @@ cd template-service
 
 ## Documentation
 
-The component documentation can be found at https://eoepca.github.io/template-svce/.
+The component documentation can be found at https://eoepca.github.io/um-login-gluu-oxauth/.
 
 <!-- USAGE EXAMPLES -->
 
@@ -163,7 +143,7 @@ Change the version number in the `build.gradle` wrapper task then run:
 
 ## Roadmap
 
-See the [open issues](https://github.com/EOEPCA/template-svce/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/EOEPCA/um-login-gluu-oxauth/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 

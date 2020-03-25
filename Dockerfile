@@ -25,7 +25,7 @@ RUN wget -q https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/
     && rm -rf /tmp/jetty.tar.gz
 
 # Ports required by jetty
-EXPOSE 8080
+EXPOSE 9080
 
 # ======
 # Jython
